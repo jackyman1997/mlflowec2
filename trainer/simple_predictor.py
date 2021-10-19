@@ -7,3 +7,6 @@ class DummyModel():
 
     def fit(self, *args, **kwargs):
         self.model.fit(*args, **kwargs)
+
+    def predict(self, *args, **kwargs): 
+        return self.model.predict(*args, **kwargs)
