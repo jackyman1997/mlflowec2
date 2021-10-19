@@ -26,4 +26,4 @@ if __name__ == "__main__":
         # with open(Pkl_Filename, 'wb') as file:
         #     pickle.dump(lr, file)
         mlflow.sklearn.log_model(
-            model, "model", registered_model_name=f"{model.__name__}")
+            model, "model", registered_model_name=f"DUMMYMODEL")
