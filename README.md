@@ -22,7 +22,15 @@ mlflow run .
 ```
 
 # Run with Docker
-
+Not working on now
+## build
+```
+sudo docker build . -t mlflowec2:1.0 -f docker/mlflowec2.DockerFile --rm
+```
+## run
+```
+sudo docker run --name mlflowec2:1.0 -it -p 5000:5000 --rm rmlflowec2:1.0
+```
 
 # Custom hyperparamaters
 This is one of the improvements that needs to be done. Currently, it is done by hard coded argparse and for loops.  
