@@ -150,4 +150,7 @@ Thumbs.db
 # chromedriver
 chromedriver
 
+# mlflow
+mlruns
+
 # Exception 
