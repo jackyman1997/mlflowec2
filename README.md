@@ -10,7 +10,7 @@ Run `mlflow` server, [explanation](https://stackoverflow.com/questions/63255631/
 mlflow server \
     --backend-store-uri sqlite:///mlflow.db \
     --default-artifact-root ./artifacts \
-    --host 0.0.0.0
+    --host 127.0.0.1
 ```
 Set `MLFLOW_TRACKING_URI` environment variable: 
 ```
