@@ -6,11 +6,13 @@ from trainer.ml_utils import sklearn_split
 from trainer.simple_predictor import DummyModel
 
 
+# export MLFLOW_TRACKING_URI=http://127.0.0.1:5000
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
+
 
 if __name__ == "__main__":
     # load data
-    X, y = boston_data(return_X_y=True)
+    X, y = boston_data()
     # Split the data into training and test sets. (0.75, 0.25) split.
     X_train, X_test, y_train, y_test = sklearn_split(X, y, test_size=0.25)
 
