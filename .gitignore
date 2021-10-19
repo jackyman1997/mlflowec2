@@ -152,5 +152,7 @@ chromedriver
 
 # mlflow
 mlruns
+artifacts/
+mlflow.db
 
 # Exception 
