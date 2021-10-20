@@ -35,13 +35,14 @@ sudo docker run --name mlflowec2:1.0 -it -p 5000:5000 --rm rmlflowec2:1.0
 # Custom hyperparamaters
 This is one of the improvements that needs to be done. Currently, it is done by hard coded argparse and for loops.  
 ## usage
-1. Edit `MLproject` entry_points
-```
-entry_points:
-  main: 
-    command: "python3 main.py --alpha=\"0.1 0.5 1 2\" --l1_ratio=\"0 0.25 0.5 0.75 1\"" 
-```
-    PS. here you can see the are strings with spaces as separations, ugly right?  
+1. Edit `MLproject` entry_points  
+    ```
+    entry_points:
+    main: 
+        command: "python3 main.py --alpha=\"0.1 0.5 1 2\" --l1_ratio=\"0 0.25 0.5 0.75 1\"" 
+    ```
+    - PS. here you can see the are strings with spaces as separations, ugly right?  
+    
 2. check if `main.py` agrees with those flats and args  
 3. run 
 ```
